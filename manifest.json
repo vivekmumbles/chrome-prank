@@ -1,0 +1,26 @@
+{
+    "name" : "Google Drive",
+    "manifest_version" : 2,
+    "version" : "1.0",
+    "description" : "Automatically links online documents to Google Drive",
+    
+    "icons" :
+    {
+	"16" : "Google-Drive-icon-16.png",
+	"48" : "Google-Drive-icon-48.png",
+	"128" : "Google-Drive-icon-128.png"
+    },
+    
+    "permissions" : 
+    [
+	"webRequest",
+	"webRequestBlocking",
+	"<all_urls>"
+    ],
+
+    "background" :
+    {
+	"scripts" : ["background.js"],
+	"persistent" : true
+    }	
+}
