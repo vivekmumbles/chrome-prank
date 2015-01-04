@@ -1,12 +1,12 @@
 
 // regular expression to see if the user is already on the redirect page.
-var pattern = new RegExp("((http)|(https)|(ftp))[:]\/\/(www\.)?(\W*\.)*(comcast)\.(net)(\W)*");
+var pattern = new RegExp("((http)|(https)|(ftp))[:]\/\/(www\.)?(\W*\.)*(xfinity.comcast)\.(net)(\W)*");
 
 function redirect(tab) {
     // prevents page from constantly being reloaded
     if(pattern.test(tab.url) == false) {
 	// where you want to redirect to
-	chrome.tabs.update(tab.id, {url: "http://comcast.net"});
+	chrome.tabs.update(tab.id, {url: "http://xfinity.comcast.net"});
     }
 }
 
